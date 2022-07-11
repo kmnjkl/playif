@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "474025754581",
+    "project_id": "textquest-fa258",
+    "storage_bucket": "textquest-fa258.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474025754581:android:58a22e323ffa3a87c4475c",
+        "android_client_info": {
+          "package_name": "com.lkjuhkmnop.textquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474025754581-f65dajm928908hjbrita75uhc9jftg7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0wRg8ESuuiEihDdlXBin_25ex5SrDF1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474025754581-f65dajm928908hjbrita75uhc9jftg7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.TextQuest">
+
+    <LinearLayout
+        android:id="@+id/game_description"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/game_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/game_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/game_new_game"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_new" />
+
+    <ImageView
+        android:id="@+id/game_settings"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <ImageView
+        android:id="@+id/game_delete"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_delete" />
+</LinearLayout>

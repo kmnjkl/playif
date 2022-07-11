@@ -1,0 +1,180 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--    /=== Text ===\ -->
+    <style name="TextAppearance.TextQuest.Title"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/keyTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.SubTitle"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/infoTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.SecondaryInfo"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.PassageText"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/standardTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Link"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/standardTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.CharParameterName"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/standardTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.CharParameterValue"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/standardTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Standard"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/standardTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Headline1"
+        parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Headline2"
+        parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">43sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Headline3"
+        parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Headline4"
+        parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Headline5"
+        parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Caption"
+        parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Label"
+        parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.TextQuest.Key"
+        parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/comfortaa_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/keyTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+<!--    \=== Text ===/ -->
+
+<!--    /=== Buttons ===\ -->
+    <style name="Widget.TextQuest.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/button</item>
+    </style>
+<!--    \=== Buttons ===/ -->
+
+
+<!--    Splash Screen-->
+    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+<!--        <item name="backgroundColor">@color/secondaryDarkColor</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryLightColor</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/primaryDarkColor</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.TextQuest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:textAppearance">@style/TextAppearance.TextQuest.Standard</item>
+        <item name="android:textColorHint">@color/hint</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.TextQuest.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.TextQuest.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.TextQuest.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.TextQuest.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.TextQuest.Headline5</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.TextQuest.Caption</item>
+
+        <item name="android:listDivider">@color/secondaryDarkColor</item>
+        
+        <item name="buttonStyle">@style/Widget.TextQuest.Button</item>
+
+        <item name="colorControlNormal">@color/controlNormal</item>
+        <item name="colorControlActivated">@color/controlActivated</item>
+        <item name="colorControlHighlight">@color/controlHighlight</item>
+    </style>
+</resources>

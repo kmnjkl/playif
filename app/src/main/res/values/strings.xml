@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">TextQuest</string>
+
+    <!--    MainActivity -->
+    <string name="play_button_label">Играть</string>
+    <string name="add_button_label">Добавить квест</string>
+    <string name="lib_button_label">Библиотека</string>
+    <string name="tqlib_button_label">TQLib</string>
+    <string name="games_title">Игры</string>
+    <string name="lib_title">Библиотека</string>
+
+    <!--    TQLibActivity -->
+    <string name="tqlib_title">TQLib</string>
+
+    <string name="tqlib_quest_cid_prefix">Cid:</string>
+
+    <!--    LibraryActivity -->
+    <string name="lib_quest_id_prefix">Id:</string>
+
+    <!--    QuestManageActivity -->
+    <string name="quest_manage_add_quest_title">Добавить квест</string>
+    <!--    Snackbar messages -->
+    <string name="adding_quest_message">Добавление квеста</string>
+    <!--    Quest title-->
+    <string name="quest_title_label">Название квеста</string>
+    <string name="quest_title_empty_warning">Введите название!</string>
+    <!--    Quest author-->
+    <string name="quest_author_label">Автор</string>
+    <string name="quest_author_empty_warning">Заполните поле!</string>
+    <!--    Quest json-->
+    <string name="quest_json_file_choose_label">Json файл</string>
+    <string name="quest_button_json_file_choose_label">Выбрать файл</string>
+    <string name="quest_button_json_file_choose_warning">Выберите файл!</string>
+    <!--    Ok button-->
+    <string name="quest_manage_ok_button_text">OK</string>
+    <!--    Char p. data -->
+    <string name="character_properties_label">Характеристики персонажа (главного героя)</string>
+    <string name="character_parameters_label">Основные параметры персонажа</string>
+    <string name="char_p_data_add_dialog_title">Добавить</string>
+    <string name="char_p_data_add_ok">Добавить</string>
+    <string name="char_p_data_add_cancel">Отмена</string>
+    <string name="char_p_data_add_cancel_msg">Отмена добавления</string>
+    <string name="char_p_data_delete_msg">Удалено:</string>
+    <string name="char_p_data_name_label">Название (1&#8211;20 символов):</string>
+    <string name="char_p_data_name_hint">Название</string>
+    <string name="char_p_data_value_label">Значение: </string>
+    <string name="char_p_data_value_hint">Значение</string>
+    <string name="char_p_data_add_name_used">Все названия характеристик и параметров должны быть различны! Придумайте другое название!</string>
+
+    <!--    PlayActivity -->
+    <string name="play_restart_button">Начать сначала</string>
+    <string name="play_close_button">Закрыть</string>
+    <string name="char_param_divider_text">:\t</string>
+
+    <!--    UserManagerActivity -->
+    <string name="user_manager_title">Аккаунт</string>
+
+    <string name="user_change_password">Смена пароля</string>
+    <string name="user_old_pass_label">Старый пароль:</string>
+    <string name="user_new_pass_label">Новый пароль:</string>
+    <string name="user_repeat_new_pass_label">Повторите новый пароль:</string>
+    <string name="user_change_pass_button">Сменить пароль</string>
+    <string name="user_enter_new_pass_warning">Введите одинаковые пароли длиной не менее 6 символов в поля "Новый пароль" и "Повторите новый пароль"!</string>
+    <string name="user_pass_changed_successfully">Пароль изменён</string>
+
+    <string name="user_manage_finish">ОК</string>
+
+    <!--    Auth -->
+    <string name="auth_signin_text">Войти</string>
+    <string name="auth_signout_text">Выйти</string>
+    <string name="auth_account_settings">Аккаунт</string>
+</resources>

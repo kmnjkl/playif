@@ -1,0 +1,148 @@
+@startuml
+
+package story {
+    class TQStory {
+        - TQQuest tqquest
+        - TwPassage currentPassage
+        - String currentPassageCleanText
+        - MathExpressionEvaluator mathExpressionEvaluator
+        __
+        + Story(TQQuest tqquest)
+        ..
+        + TwPassage getPassageByPid(int pid)
+        + TwPassage getPassageByName(String name)
+        ..
+        + int getCurrentPassagePid()
+        + String getCurrentPassageName()
+        ..
+        + String processCurrentPassage()
+        + TwLink[] getCurrentPassageLinks()
+        + String getCurrentPassageCleanText()
+        + goByLinkNumber(int linkNumber)
+        ..
+        + boolean isEnd()
+    }
+    TQStory::tqquest o-- TQQuest
+    TQStory::currentPassage o.. TwPassage
+
+    'TQQuest \===============
+    class TQQuest {
+        + String title
+        + String author
+        + TQCharacter character
+        + List<TwPassage> passages
+        + String name
+        + int startnode
+        + String creator, creator_version, ifid
+    }
+    TQQuest::character o-- TQCharacter
+    TQQuest::passages o-- TwPassage
+
+    'Character \===============
+    class TQCharacter {
+        + TQCharacterProperty[] properties
+        + TQCharacterParameter[] parameters
+
+        + TQCharacter(TQCharacterProperty[] properties, TQCharacterParameter[] parameters)
+    }
+    TQCharacter::properties o-- TQCharacterProperty
+    TQCharacter::parameters o-- TQCharacterParameter
+
+    class TQCharacterProperty {
+        + String tqKeyword
+        + String value
+
+        + TQCharacterProperty()
+        + TQCharacterProperty(String tqKeyword, String value)
+    }
+
+    class TQCharacterParameter {
+        + String name
+        + int value
+        __
+        + TQCharacterParameter()
+        + TQCharacterParameter(String name, int startValue, String minValue, String minValPassageName, String maxValue, String maxValPassageName)
+        ..
+        + getName()
+        + setName()
+        ..
+        + getValue()
+        + setValue()
+    }
+
+    'Character /===============
+
+    'TwPassage \===============
+    class TwPassage {
+        + String text
+        + List<TwLink> links
+        + String name
+        + int pid
+        + TwPosition position
+    }
+    TwPassage::links o-- TwLink
+    TwPassage::position o-- TwPosition
+
+    'Link \===============
+    class TwLink {
+        + String name
+        + String link
+        + int pid
+    }
+    'Link /===============
+
+    'TwPosition \===============
+    class TwPosition {
+        + float x, y
+    }
+    'TwPosition /===============
+
+    'TwPassage /===============
+
+    'TQQuest /===============
+}
+
+package tqmanager {
+    'TQManager \===============
+    note bottom of TQManager : Умеет управлять хранящимися квестами (json, знает где их искать), добавляет новые квесты в "библиотеку".
+    class TQManager {
+        + {static} void addQuest(String title, String author, file)
+        + {static} TQQuest getQuest([some identifier])
+    }
+    'TQManager /===============
+}
+
+package utils {
+    class MathExpressionEvaluator {
+        - final com.fathzer.soft.javaluator.DoubleEvaluator doubleEvaluator
+        - final com.fathzer.soft.javaluator.StaticVariableSet<Double> variableSet
+
+        + double evaluate(Strint ex)
+        + void setVariable(String name, double value)
+    }
+    MathExpressionEvaluator <.. TQStory::processCurrentPassage
+        MathExpressionEvaluator --o TQStory::mathExpressionEvaluator
+}
+
+together {
+    MainActivity --> GamesActivity
+    MainActivity --> ManagerActivity
+    MainActivity --> ShareActivity
+
+    GamesActivity --> TQManager
+    GamesActivity --> ManagerActivity
+    GamesActivity --> PlayActivity
+
+    ManagerActivity --> TQManager
+    ManagerActivity --> ManageQuestActivity
+    ManagerActivity --> PlayActivity
+
+    PlayActivity --> TQStory
+    PlayActivity --> TQManager
+
+    ManageQuestActivity --> TQManager
+
+    ShareActivity --> TQManager
+}
+
+@enduml

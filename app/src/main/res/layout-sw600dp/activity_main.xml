@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor"
+    android:theme="@style/Theme.TextQuest"
+    tools:context=".mainactivity.MainActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.TextQuest.Headline1"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginBottom="140dp"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:contentDescription="@string/play_button_label"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_play_triangle" />
+
+    <ImageView
+        android:id="@+id/add_btn"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="320dp"
+        android:clickable="true"
+        android:contentDescription="@string/add_button_label"
+        android:forceHasOverlappingRendering="false"
+        app:layout_constraintBottom_toBottomOf="@+id/play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lib_btn"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/ic_add_library" />
+
+    <TextView
+        android:id="@+id/add_btn_description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_button_label"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.TextQuest.Caption"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/add_btn"
+        app:layout_constraintStart_toStartOf="@+id/add_btn"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn" />
+
+    <TextView
+        android:id="@+id/lib_btn_description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/lib_button_label"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.TextQuest.Caption"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/lib_btn"
+        app:layout_constraintStart_toStartOf="@+id/lib_btn"
+        app:layout_constraintTop_toBottomOf="@+id/lib_btn" />
+
+    <TextView
+        android:id="@+id/play_btn_description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/play_button_label"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.TextQuest.Caption"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/play_btn"
+        app:layout_constraintStart_toStartOf="@+id/play_btn"
+        app:layout_constraintTop_toBottomOf="@+id/play_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/lib_btn"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="320dp"
+        android:clickable="true"
+        android:contentDescription="@string/lib_button_label"
+        app:layout_constraintBottom_toBottomOf="@+id/play_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/ic_library" />
+
+    <Button
+        android:id="@+id/auth_button"
+        style="@style/Widget.TextQuest.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/auth_signin_text"
+        app:layout_constraintBottom_toTopOf="@+id/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/auth_signout_button"
+        style="@style/Widget.TextQuest.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/auth_account_settings"
+        app:layout_constraintBottom_toTopOf="@+id/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_button" />
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="571dp"
+        android:layout_height="wrap_content"
+        android:text="User info"
+        android:textAppearance="@style/TextAppearance.TextQuest.Standard"
+        app:layout_constraintBottom_toTopOf="@+id/app_name"
+        app:layout_constraintEnd_toStartOf="@+id/auth_button"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
